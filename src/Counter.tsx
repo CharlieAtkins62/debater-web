@@ -1,5 +1,5 @@
-import { useAppDispatch } from './hooks/storeHooks';
-import { increment, decrement } from './slices/counterSlice';
+import { useAppDispatch } from "./hooks/storeHooks";
+import { increment, decrement } from "./slices/counterSlice";
 
 export default function Counter() {
   const dispatch = useAppDispatch();
@@ -14,12 +14,8 @@ export default function Counter() {
 
   return (
     <>
-      <button onClick={incrementCounter}>
-        Increment +
-      </button>
-      <button onClick={decrementCounter}>
-        Decrement -
-      </button>
+      <button onClick={incrementCounter}>Increment +</button>
+      <button onClick={decrementCounter}>Decrement -</button>
     </>
   );
 }
